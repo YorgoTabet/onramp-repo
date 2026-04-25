@@ -1,0 +1,10 @@
+name: Notify Merge
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Log-Changes-Merged:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Changes merged to main"
